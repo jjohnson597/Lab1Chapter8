@@ -33,7 +33,16 @@ while True:
         circumference = c.calc_circumference(radius)
         print(f"\nThe circumference of the circle is {circumference:.3f}.")
         input("\nPress Enter to continue...")
-        
+
+    elif choice == "3":
+        width = float(input("\nEnter the width of the rectangle: "))
+        height = float(input("Enter the height of the rectangle: "))
+
+        area = r.calc_area(width, height)
+
+        print(f"\nThe area of the rectangle is {area:.1f}.")
+        input("\nPress Enter to continue...")
+    
     elif choice == "5":
         print("\nGoodbye!")
         break
