@@ -8,6 +8,17 @@ Date: 6/21/2026
 
 import circle as c
 import rectangle as r
+# Aliases are necessary because both modules contain a function
+# named calc_area(). Using aliases lets us specify which module's
+# calc_area() function we want to call.
 
-c.calc_area()
-r.calc_area()
+while True:
+    print("\nGeometry Calculator")
+    print("-------------------")
+    print("1. Calculate Circle Area")
+    print("2. Calculate Circle Circumference")
+    print("3. Calculate Rectangle Area")
+    print("4. Calculate Rectangle Perimeter")
+    print("5. Exit")
+
+    choice = input("\nEnter your choice (1-5): ")
