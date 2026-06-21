@@ -27,6 +27,12 @@ while True:
         area = c.calc_area(radius)
         print(f"\nThe area of the circle is {area:.3f}.")
         input("\nPress Enter to continue...")
+    
+    elif choice == "2":
+        radius = float(input("\nEnter the radius of the circle: "))
+        circumference = c.calc_circumference(radius)
+        print(f"\nThe circumference of the circle is {circumference:.3f}.")
+        input("\nPress Enter to continue...")
         
     elif choice == "5":
         print("\nGoodbye!")
