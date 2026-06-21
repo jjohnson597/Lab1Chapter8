@@ -22,6 +22,13 @@ while True:
     print("5. Exit")
 
     choice = input("\nEnter your choice (1-5): ")
-    if choice == "5":
+    if choice == "1":
+        radius = float(input("\nEnter the radius of the circle: "))
+        area = c.calc_area(radius)
+        print(f"\nThe area of the circle is {area:.3f}.")
+        input("\nPress Enter to continue...")
+        
+    elif choice == "5":
         print("\nGoodbye!")
         break
+    
