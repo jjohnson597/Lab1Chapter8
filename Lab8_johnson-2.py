@@ -57,3 +57,6 @@ while True:
         print("\nGoodbye!")
         break
     
+    else:
+        print("\nInvalid choice. Please enter a number from 1 to 5.")
+        input("\nPress Enter to continue...")
