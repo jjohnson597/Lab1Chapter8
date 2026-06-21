@@ -22,3 +22,6 @@ while True:
     print("5. Exit")
 
     choice = input("\nEnter your choice (1-5): ")
+    if choice == "5":
+        print("\nGoodbye!")
+        break
