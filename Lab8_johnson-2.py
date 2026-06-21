@@ -21,6 +21,7 @@ while True:
     print("4. Calculate Rectangle Perimeter")
     print("5. Exit")
 
+
     choice = input("\nEnter your choice (1-5): ")
     if choice == "1":
         radius = float(input("\nEnter the radius of the circle: "))
@@ -41,6 +42,15 @@ while True:
         area = r.calc_area(width, height)
 
         print(f"\nThe area of the rectangle is {area:.1f}.")
+        input("\nPress Enter to continue...")
+    
+    elif choice == "4":
+        width = float(input("\nEnter the width of the rectangle: "))
+        height = float(input("Enter the height of the rectangle: "))
+
+        perimeter = r.calc_perimeter(width, height)
+
+        print(f"\nThe perimeter of the rectangle is {perimeter:.1f}.")
         input("\nPress Enter to continue...")
     
     elif choice == "5":
